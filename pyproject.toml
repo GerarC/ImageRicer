@@ -1,0 +1,27 @@
+[project]
+name = "imageracer-cli"
+description = "An application to set a specific color palette to an image through cli"
+version = "0.0.1"
+authors = [
+    { name = "Gerardo Castillo", email = "gcastillo.m14@gmail.com" }
+]
+packages = [
+    { include = "imagericer" }
+] 
+dependencies = [
+    "typer[all]",
+    "rich"
+]
+keywords = ["imagericer", "cli", "Ricing", "Palette"]
+
+[project.urls]
+documentation = "https://github.com/GerarC/ImageRicer"
+repository = "https://github.com/GerarC/ImageRicer"
+homepage = "https://github.com/GerarC/ImageRicer"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+imagericer = "imagericer.main:main"
